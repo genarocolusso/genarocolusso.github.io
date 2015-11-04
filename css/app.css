@@ -1,0 +1,246 @@
+html, body{
+width: 100%;
+height: 100%;
+-webkit-text-stroke: 0.Xpx;
+line-height: 1.4 ;
+font-family: 'Montserrat', sans-serif;
+}
+section{ padding: 20px;  }
+
+
+#first{
+
+   background-image: url("../img/bg2.jpg");
+  background-size: cover;
+ text-align: center;
+ padding: 100px 0px;
+     box-shadow: 0px 0px 10px;
+     background-position: center;
+
+}
+#services{padding: 40px  0px  80px 0px;  }
+#services .test{
+    min-height: 225px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.h2, h2 {
+    font-size: 35px;
+}
+
+.bgbg{   
+
+  background-image: url("../img/bg2.jpg");
+  background-size: cover;
+  background-repeat: repeat-x; 
+   left: 0; 
+   top: 0;
+  min-height: 50%;
+  position: absolute;
+  z-index: -1;
+    }
+
+    .test p{
+          
+        overflow: hidden;
+        position: relative;
+        
+    }
+    .test.ativo p{
+       
+         transition: all 0.3s ease-in-out 0.3s;
+    }
+
+  .footer{
+    padding: 20px;
+    background-color: #101012; 
+    color: #fff;
+  }  
+  .footer h3{ text-align: center;}
+
+   .bgbg{
+        background-size: 2250px auto;
+        width: 6750px;
+    }
+
+.fullh{  min-height: 50%;}
+
+#first h1 {
+    font-size: 5.5em;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    
+}
+#first p {
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+.someicons{
+      color: #FFA128;
+}
+
+@media screen and (max-width: 580px) {
+
+#first h1 {
+    font-size: 3.5em; 
+}
+
+
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+    overflow: hidden !important;
+}
+.text-primary {
+    color: #FFA128;
+}
+
+
+
+  
+ 
+  .inline-block{
+    display:  inline-block;
+    margin-left: 10px;
+   }
+ 
+#services *{transition: all 0.3s ease-in-out  }
+
+#services .test:hover .service-heading{
+  color:#F9991D;
+}
+#about{
+ min-height: 400px;
+ color:#fff;
+ background-color: #F7AE51;
+ background-image: url(../img/bggenaro.jpg);
+ background-size: cover;
+ background-position: center;
+ box-shadow: inset 10px 0px 30px rgba(0,0,0,0.7);
+}
+#about *{
+  transition: all 0.5s ease-in-out ;
+}
+#about .imgpessoa{
+  height: 200px;
+  margin: 0px auto; 
+  margin-top: 90px;
+  display: block;
+}
+.progress {
+    height: 30px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+
+ .php{width:  70%; 
+  -webkit-animation: animatedBarsSet 3s cubic-bezier(.90, .37, .40, .47);   /* Chrome, Safari, Opera */
+   -moz-animation: animatedBarsSet 3s cubic-bezier(.90, .37, .40, .47);  /* Chrome, Safari, Opera */
+  
+    animation: animatedBarsSet 3s cubic-bezier(.90, .37, .40, .47);  }
+ .ruby{width: 40%;
+  -webkit-animation: animatedBarsQua 2s cubic-bezier(.90, .37, .40, .47);  /* Chrome, Safari, Opera */
+   -moz-animation: animatedBarsQua 2s cubic-bezier(.90, .37, .40, .47); /* Chrome, Safari, Opera */
+  
+    animation: animatedBarsQua 2s cubic-bezier(.90, .37, .40, .47); }
+ .htmlcss{width: 90%;
+  -webkit-animation: animatedBarsNov 2s cubic-bezier(.90, .37, .40, .47);  /* Chrome, Safari, Opera */
+   -moz-animation: animatedBarsNov 2s cubic-bezier(.90, .37, .40, .47);  /* Chrome, Safari, Opera */
+     animation: animatedBarsNov 2s cubic-bezier(.90, .37, .40, .47);
+  }
+
+ 
+
+  @media screen and (max-width: 780px){
+    .footer *{
+        text-align: center;
+    }
+
+   }
+
+
+   .preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes animatedBarsNov{
+    from{width: 0%}to{width:90%}
+}
+@-moz-keyframes animatedBarsNov {
+   from{width: 0%}to{width:90%}
+}
+@-webkit-keyframes animatedBarsNov {
+   from{width: 0%}to{width:90%}
+}
+@-ms-keyframes animatedBarsNov {
+   from{width: 0%}to{width:90%}
+}
+@-o-keyframes animatedBarsNov {
+    from{width: 0%}to{width:90%}
+}
+ 
+@keyframes animatedBarsQua{
+    from{width: 0%}to{width:40%}
+}
+@-moz-keyframes animatedBarsQua {
+   from{width: 0%}to{width:40%}
+}
+@-webkit-keyframes animatedBarsQua {
+   from{width: 0%}to{width:40%}
+}
+@-ms-keyframes animatedBarsQua {
+   from{width: 0%}to{width:40%}
+}
+@-o-keyframes animatedBarsQua {
+    from{width: 0%}to{width:40%}
+}
+
+@keyframes animatedBarsSet{
+    from{width: 0%}to{width:70%}
+}
+@-moz-keyframes animatedBarsSet {
+   from{width: 0%}to{width:70%}
+}
+@-webkit-keyframes animatedBarsSet {
+   from{width: 0%}to{width:70%}
+}
+@-ms-keyframes animatedBarsSet {
+   from{width: 0%}to{width:70%}
+}
+@-o-keyframes animatedBarsSet {
+    from{width: 0%}to{width:70%}
+}
