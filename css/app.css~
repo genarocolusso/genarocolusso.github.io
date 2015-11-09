@@ -10,7 +10,7 @@ section{ padding: 20px;  }
 
 #first{
 
-   background-image:linear-gradient(rgba(230, 123, 31, 0.6), rgba(119, 25, 25, 0.6)),  url("../img/bg2.jpg");
+   background-image: url("../img/bg2.jpg");
   background-size: cover;
  text-align: center;
  padding: 100px 0px;
