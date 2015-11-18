@@ -212,5 +212,33 @@ color:  rgb(144, 83, 24) !important;
     -moz-transform: rotate(360deg) scale(1,1);
     transform: rotate(360deg) scale(1,1);
 }
+ #boxes{
+  padding: 0px;
+ }
+.box{
+  background-size: cover;
+  background-position: center;
+  
+  width: 100%;
+  min-height: 300px;
+  padding: 50px;
 
+ transition: all 0.2s linear;
+}
+.box:hover{
+   transform: scale(1.1);
+  }
+.clearmp{
+  padding: 0px;
+  margin: 0px;
+}
 
+.ovhdn{
+   overflow: hidden;
+}
+
+.box .textinfo{
+  text-align: center;
+   font-size: 28px;
+   margin-top: 90px;
+}
