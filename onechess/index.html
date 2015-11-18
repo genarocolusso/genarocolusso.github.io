@@ -30,17 +30,13 @@
    
 </head>
  
-<body>
- <script>
-  
-
-</script>
-
+<body class="preload">
+ 
  
 
      <div class="preloader" style="">
   <div class="status" style=""> <i class="fa fa-spinner fa-spin "></i>
-    <h1 class="pulse"> Loading </h1>
+    <h1 class="animated infinite pulse"> Loading </h1>
    </div>
    </div>
  
@@ -84,23 +80,23 @@
 
 
 
-  <div class="textfirstbox">
-     <h2>Alguma frase de boas vindas aqui </h2>  
+  <div class="textfirstbox   ">
+     <h2> Welcome to OneChess </h2>  
 
   </div>
   </div>
 
 
 </section>
- <section id="about">
+ <section id="about" >
  <div class="container">
   <div class="col-md-6">
    <div class="infosbox">
-  <img src="http://www.ballistiq.com/wp-content/themes/ballistiq2013/images/services-icons-chess-@2x.png" class="img-responsive center-block">
+  <img src="http://www.ballistiq.com/wp-content/themes/ballistiq2013/images/services-icons-chess-@2x.png" class="img-responsive center-block wow bounceInUp">
    </div>
   </div>
   <div class="col-md-6">
-    <div class="infosbox">
+    <div class="infosbox wow bounceInUp"  >
     <h2 class="upc"> We are about the chess players</h2>
     <p> We want to bring value to <strong> good plays</strong>, <strong>good matches</strong> and <strong>good players</strong>!
       OneChess is the place where the best chess players and tournaments will be placed. You can be part of it. </p>
@@ -110,9 +106,9 @@
 
 </section>
 
- <section id='first'>
+ <section id='first'    >
   <div class="container">
-     <div class="row infosec">
+     <div class="row infosec"   >
     <div class="col-md-4">
      <h1 class="dark"> Bronze Platform </h1>
 
@@ -142,7 +138,7 @@
         </p>
     </div>
    </div>
- <div class="row infosec noborder">
+ <div class="row infosec noborder  "  >
     <div class="col-md-4">
      <h1 class="dark"> Gold Platform </h1>
 
@@ -158,7 +154,7 @@
  </section>
 
  <section id="banner">
-  <div class="container">
+  <div class="container wow fadeIn" data-wow-offset="200">
       <h1 class="upc"> We are OneChess </h1>
       <p> Soon you will be able to play Chess and be rewarded as you deserve </p>
       <div class="btn btn-large btn-white ">
@@ -244,6 +240,9 @@ Santa Maria - RS, CEP: 97010-421</p>
  <script src="js/jquery.scrollTo.min.js"></script>  
  
     <script src="js/wow.min.js"></script>
+    <script>
+              new WOW().init();
+              </script>
     <script src="js/precadastro.js"></script>
     
   </body>

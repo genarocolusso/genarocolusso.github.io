@@ -1,13 +1,13 @@
 
 $(document).ready(function(){
-new WOW().init();
+
   
  $(window).load(function(){
 
-jQuery(".status").fadeOut(4000);
+jQuery(".status").fadeOut(1000);
         // will fade out the whole DIV that covers the website.
-  jQuery(".preloader").delay(1500).fadeOut("slow");
-
+  jQuery(".preloader").delay(10).fadeOut("slow");
+ $("body").removeClass("preload");
  });
        
 
