@@ -41,11 +41,11 @@
     <div class="container">
       <h2> Map Menu </h2>
 
-      <p> Brazil </p>
-      <p> Japan </p>
-      <p> EUA </p>
-      <p> Germany </p>
-      <p> Canada </p>
+      <p data-lat="-15.79225357" data-long="-47.94433594"> Brazil </p>
+      <p data-lat="36.204824" data-long="138.252924">  Japan </p>
+      <p data-lat="40.7143528" data-long="-74.0059731"> EUA </p>
+      <p data-lat="51.165691" data-long="10.451526"> Germany </p>
+      <p data-lat="56.130366" data-long="-106.346771"> Canada </p>
 
 
   </div>
@@ -61,48 +61,16 @@
    
        <script>
 
-
-var locations = [
-     ['Title A', 35.64416,139.7075938, 1, '<div class="btn btn-info"><i class="fa fa-globe"></i></div>'],
-     ['Title B', 35.64416,139.6075938, 2, '<img src="img/img1.jpg" class="img-responsive" style="max-width: 150px">'],
-     ['Title C', 35.64416,139.5075938, 3, '<div class="btn btn-info"><i class="fa fa-globe"></i></div>'],
-     ['Title D', 35.64416,139.3075938, 4, '<img src="img/img2.jpg" class="img-responsive" style="max-width: 150px">']
-];
-
-
-function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 8,
-    center: {lat: 35.64416, lng: 139.6075938} 
-  });
-
-  var infowindow = new google.maps.InfoWindow;
-
-var marker, i;
-
-for (i = 0; i < locations.length; i++) {  
-    marker = new google.maps.Marker({
-         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-         map: map
-    });
-
-    google.maps.event.addListener(marker, 'click', (function(marker, i) {
-         return function() {
-             infowindow.setContent(locations[i][4]);
-             infowindow.open(map, marker);
-         }
-    })(marker, i));
-}
-
-}
-
+ 
 
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBou0TGGwJzStMh2ZM8OuJFaIa7uZM9BNo&signed_in=true&callback=initMap"
-        async defer></script>
+   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBou0TGGwJzStMh2ZM8OuJFaIa7uZM9BNo&signed_in=true"
+        async defer></script>-->
+        
+
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
          <script src="js/jquery-1.9.1.js"></script>
-     <script src="js/custom.js"></script>
- 
+     
    <script src="js/bootstrap.min.js"></script>
  <script src="js/jquery.scrollTo.min.js"></script>  
  
@@ -110,6 +78,8 @@ for (i = 0; i < locations.length; i++) {
     <script>
               new WOW().init();
               </script>
+              <script src="js/custom.js"></script>
+ 
 
   </body>
 </html>
