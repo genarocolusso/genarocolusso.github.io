@@ -33,7 +33,7 @@ for (i = 0; i < locations.length; i++) {
 }
  
 $(document).ready(function(){
-  initMap();
+  
  
        
 document.querySelector( "#nav-toggle" )
