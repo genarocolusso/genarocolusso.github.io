@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> maps</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="test">
+    <meta name="keywords" content="test">
+    <meta name="author" content="test"> 
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="test" />
+<meta property="og:url" content="test" />
+<meta property="og:description" content="test" />
+<meta property="og:image" content="test" />
+  <!-- This is how you would link your custom stylesheet -->
+   <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+  <!-- Important Owl stylesheet --> 
+<!-- Default Theme --> 
+  <link rel="stylesheet" href="css/app.css"> 
+ 
+<!-- Include js plugin -->
+
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <style>
+       
+     
+    </style>
+
+</head>
+ 
+<body class="preload">
+  <a id="nav-toggle" href="#"><span></span></a>
+   <div class='overall'>
+    <div class="menu">
+    <div class="container">
+      <h2> Map Menu </h2>
+
+      <p> Brazil </p>
+      <p> Japan </p>
+      <p> EUA </p>
+      <p> Germany </p>
+      <p> Canada </p>
+
+
+  </div>
+ </div>
+  </div>
+  <h1> Map Test </h1>
+ <section id="map">
+
+  
+
+ </section>
+
+   
+       <script>
+
+
+var locations = [
+     ['Title A', 35.64416,139.7075938, 1, '<div class="btn btn-info"><i class="fa fa-globe"></i></div>'],
+     ['Title B', 35.64416,139.6075938, 2, '<img src="img/img1.jpg" class="img-responsive" style="max-width: 150px">'],
+     ['Title C', 35.64416,139.5075938, 3, '<div class="btn btn-info"><i class="fa fa-globe"></i></div>'],
+     ['Title D', 35.64416,139.3075938, 4, '<img src="img/img2.jpg" class="img-responsive" style="max-width: 150px">']
+];
+
+
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 8,
+    center: {lat: 35.64416, lng: 139.6075938} 
+  });
+
+  var infowindow = new google.maps.InfoWindow;
+
+var marker, i;
+
+for (i = 0; i < locations.length; i++) {  
+    marker = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+         map: map
+    });
+
+    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+         return function() {
+             infowindow.setContent(locations[i][4]);
+             infowindow.open(map, marker);
+         }
+    })(marker, i));
+}
+
+}
+
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBou0TGGwJzStMh2ZM8OuJFaIa7uZM9BNo&signed_in=true&callback=initMap"
+        async defer></script>
+         <script src="js/jquery-1.9.1.js"></script>
+     <script src="js/custom.js"></script>
+ 
+   <script src="js/bootstrap.min.js"></script>
+ <script src="js/jquery.scrollTo.min.js"></script>  
+ 
+    <script src="js/wow.min.js"></script>
+    <script>
+              new WOW().init();
+              </script>
+
+  </body>
+</html>
+
+

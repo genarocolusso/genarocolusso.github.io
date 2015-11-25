@@ -1,0 +1,90 @@
+
+@import url(http://fonts.googleapis.com/css?family=Roboto); 
+body{ 
+color: #fff; 
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 0.025em;
+  line-height: 1.75em;
+ background: #000;
+ font-family: 'Roboto', sans-serif;
+ 
+}  
+body, html{ 
+height: 100%;
+width: 100%; 
+margin: 0; padding: 0;
+}
+
+#map{ height: 400px;}
+
+.gm-style-iw{
+  color: #000;
+}
+
+.overall{ 
+  min-height: 120%;
+  width: 100%;
+  position: fixed;
+  z-index:-3;
+  margin-top:-50px;
+  opacity: 0; 
+  background: rgba(76, 117, 171, 0.7);
+  transition: all 900ms ease-in-out;
+}
+.overall.active{
+ opacity: 1;
+ z-index: 3;
+ 
+}
+.overall *{z-index: 3;}
+#nav-toggle { position: absolute; left: 96%; top: 5%; z-index: 4;}
+
+#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px; 
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+
+}
+ 
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+.menu{ 
+  text-align: center;
+  margin: 40px auto;
+   transition: all 200ms ease-in-out;
+
+}
+.menu p:hover{
+  font-weight: bold;
+
+}
+
+a:hover, a:visited, a:focus{outline: 0;}
