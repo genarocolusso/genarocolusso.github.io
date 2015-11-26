@@ -5,7 +5,7 @@ var locations = [
      ['Cacequi, RS', -29.9426675,-54.8291259, 3, '<div class="btn btn-info"><i class="fa fa-globe"></i></div>'],
      ['Cachoeira do Sul, RS', -30.0336816,-52.893221, 4, '<img src="img/img2.jpg" class="img-responsive" style="max-width: 150px">'],
      ['Cerro Largo, RS', -28.1437464,-54.7192376, 5, '<img src="img/img2.jpg" class="img-responsive" style="max-width: 150px">'],
-     ['Camargo, RS', -28.5884715,-53.0244018, 6, ' '],
+     ['Camargo, RS', -28.5884715,-52.200741, 6, ' '],  
      ['Constantina, RS', -27.6725055,-52.893221, 7, ' '],
      ['Cruz Alta, RS', -28.6454883,-53.605355, 8, ' '],
      ['Encantado, RS', -29.2360837,-51.869606, 9, ' '],
@@ -26,7 +26,7 @@ var locations = [
      ['Santa Maria, RS', -29.68725, -53.8154499, 24, ' '],
      ['Santo Antônio da Patrulha, RS', -29.8272707, -50.5179942, 25, ' '],
      ['São Francisco de Paula, RS', -29.442271, -50.5797679, 26,' '],
-     ['São Jogão do Polêsine, RS', -29.6555255, -53.4878465, 27, ' '],
+     ['São João do Polêsine, RS', -29.6559255, -53.4878165, 27, ' '],
      ['São Lourenço do Sul, RS', -31.3628498, -51.9818, 28, ' '],
      ['São Sepé, RS', -30.2032499, -53.6068646, 29, ' '],
      ['Sapiranga, RS', -29.6353852, -51.0069543, 30, ' '],
@@ -54,8 +54,9 @@ var locations = [
  
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 10,
-    center: {lat: -29.68725, lng: -53.8154499} 
-  });
+    center: {lat: -29.68725, lng: -53.8154499},
+    styles:  [{"elementType":"geometry","stylers":[{"hue":"#ff4400"},{"saturation":-68},{"lightness":-4},{"gamma":0.72}]},{"featureType":"road","elementType":"labels.icon"},{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"hue":"#0077ff"},{"gamma":3.1}]},{"featureType":"water","stylers":[{"hue":"#00ccff"},{"gamma":0.44},{"saturation":-33}]},{"featureType":"poi.park","stylers":[{"hue":"#44ff00"},{"saturation":-23}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"hue":"#007fff"},{"gamma":0.77},{"saturation":65},{"lightness":99}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"gamma":0.11},{"weight":5.6},{"saturation":99},{"hue":"#0091ff"},{"lightness":-86}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"lightness":-48},{"hue":"#ff5e00"},{"gamma":1.2},{"saturation":-23}]},{"featureType":"transit","elementType":"labels.text.stroke","stylers":[{"saturation":-64},{"hue":"#ff9100"},{"lightness":16},{"gamma":0.47},{"weight":2.7}]}]
+});
   var infowindow = new google.maps.InfoWindow;
 
 var marker, i;
