@@ -50,8 +50,9 @@ section.mid_section {
     text-align: center;
 }
  
-
-
+.mid_section p {
+    margin: 2px 0px;
+}
 .mid_section h1::after {
     content: '';
     height: 4px;
@@ -128,7 +129,7 @@ section.skill_section {
 
 .footer{
   text-align: center;
-      background: #1D1D1D;
+      background: #212121;
     background-size: cover;
      
 
