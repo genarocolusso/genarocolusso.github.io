@@ -19,7 +19,7 @@ gulp.task('hello', function() {
   console.log('Hello Zell!');
 })
 
-// Development Tasks 
+// Development Tasks
 // -----------------
 
 // Start browserSync server
@@ -32,7 +32,7 @@ gulp.task('browserSync', function() {
 })
 
 gulp.task('sass',  function() {
-  // runSequence( 
+  // runSequence(
   //   'minifycss',
   //   'concatcss',
   //   callback);
@@ -52,19 +52,19 @@ gulp.task('concatcss', function() {
   .pipe(gulp.dest('home/css'));
 })
 // Watchers
-gulp.task('watch', function() { 
-  gulp.watch('app/page.html', browserSync.reload);
+gulp.task('watch', function() {
+  gulp.watch('app/index.html', browserSync.reload);
   gulp.watch('app/css/*.css', browserSync.reload);
   gulp.watch('app/js/*.js', browserSync.reload);
 })
 
-// Optimization Tasks 
+// Optimization Tasks
 // ------------------
 
-// Optimizing CSS and JavaScript 
+// Optimizing CSS and JavaScript
 gulp.task('useref', function() {
 
-  return gulp.src('app/index.html') 
+  return gulp.src('app/index.html')
     .pipe(rename("index.html"))
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
@@ -72,7 +72,7 @@ gulp.task('useref', function() {
     .pipe(gulp.dest('home'));
 });
 
-// Optimizing Images 
+// Optimizing Images
 gulp.task('images', function() {
   return gulp.src('app/img/**/*.+(png|jpg|jpeg|gif|svg)')
     // Caching images that ran through imagemin
@@ -82,11 +82,11 @@ gulp.task('images', function() {
     .pipe(gulp.dest('home/images'))
 });
 
-// Copying fonts 
+// Copying fonts
 gulp.task('fonts', function() {
   return gulp.src('app/fonts/**/*')
     .pipe(gulp.dest('home/fonts'))
-  
+
 })
 
 gulp.task('devfonts', function() {
@@ -95,7 +95,7 @@ gulp.task('devfonts', function() {
 
 })
 
-// Cleaning 
+// Cleaning
 gulp.task('clean', function() {
   return del.sync('home').then(function(cb) {
     return cache.clearAll(cb);

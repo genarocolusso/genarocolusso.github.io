@@ -23,9 +23,9 @@
   },
   "homepage": "https://github.com/genarocolusso/genarocolusso.github.io#readme",
   "devDependencies": {
-    "browser-sync": "^2.7.12",
+    "browser-sync": "^2.14.0",
     "del": "^2.0.2",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-cache": "^0.4.1",
     "gulp-concat": "^2.6.0",
