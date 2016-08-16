@@ -17,10 +17,7 @@ body{
 
 a, a:link, a:hover{text-decoration: none;
 }
-section.projects h2 {
-    color: black;
-    text-align: center;
-}
+
 p{
   letter-spacing: 1px;
   color: #fff;
@@ -33,16 +30,6 @@ h1,h2,h3,h4,h5 {
 section{
    padding: 20px 0px;
 }
-section.top_section {
-
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.88), rgba(23, 23, 23, 0.6)), url(../img/photofirstsec.jpg) center no-repeat; /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.88), rgba(23, 23, 23, 0.6)), url(../img/photofirstsec.jpg) center no-repeat; /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(rgba(0, 0, 0, 0.88), rgba(23, 23, 23, 0.6)), url(../img/photofirstsec.jpg) center no-repeat; /* For Firefox 3.6 to 15 */
-  background: linear-gradient(rgba(0, 0, 0, 0.88), rgba(23, 23, 23, 0.6)), url(../img/photofirstsec.jpg) center no-repeat; /* Standard syntax */
- 
-  background-size: cover;
-  min-height: 600px;
-}
 section.mid_section {
     background-color: #212121;
     padding: 30px 0px  50px 0px;
@@ -52,7 +39,7 @@ section.mid_section {
 .mid_section h1 {
     text-align: center;
 }
- 
+
 .mid_section p {
     margin: 2px 0px;
 }
@@ -95,14 +82,14 @@ section.skill_section {
 .box_skill span{
   margin-top: 20px;
   font-size: 100px;
-  
+
 }
 .moreskill{ margin-top: 20px; }
 .moreskill span{
   font-size: 3em;
   color: #212121;
 }
- 
+
 .moreskill.main span{
   font-size: 5em;
   color: #212121;
@@ -134,7 +121,7 @@ section.skill_section {
   text-align: center;
       background: #212121;
     background-size: cover;
-     
+
 
 }
 .footer h1{
@@ -150,24 +137,8 @@ section.skill_section {
 }
 
 
-.arrowup{
-     
-    color: #F9D727;
-    background-image: -webkit-linear-gradient(#F9F20E,#FFCB0C,#F57100);
-     -webkit-background-clip: text; 
-     -webkit-text-fill-color: transparent; 
-    font-size: 90px;
 
 
-}
-.button-container {
-  display: block;
-  margin: 150px auto 0px auto;
-  
-}
-
- 
- 
 
 
 
@@ -188,15 +159,22 @@ section.skill_section {
   color: #EB9A1C;
 }
 
-.work_section{
+.work_section, .projects{
   text-align: left;
   padding: 10px;
   color: #000 !important;
-  
+
 }
-.aWork{
+
+.work_section h3, .projects h3{
+color: #000 !important;
+}
+
+.aWork, .project{
   width: 80%;
       margin: 30px auto;
+      color: #000 !important;
+
 }
 .work_section h4{
 color: #000 !important;

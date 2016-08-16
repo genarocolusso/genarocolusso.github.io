@@ -95,6 +95,12 @@ gulp.task('devfonts', function() {
 
 })
 
+gulp.task('addprojects', function() {
+	return gulp.src('app/projects/**/*')
+    	.pipe(gulp.dest('home/projects'))
+
+})
+
 // Cleaning
 gulp.task('clean', function() {
   return del.sync('home').then(function(cb) {
@@ -118,7 +124,7 @@ gulp.task('default', function(callback) {
 gulp.task('build', function(callback) {
   runSequence(
     'clean:dist',
-    ['sass', 'useref', 'images', 'fonts','devfonts'],
+    ['sass', 'useref', 'images', 'fonts','devfonts','addprojects'],
     callback
   )
 })
