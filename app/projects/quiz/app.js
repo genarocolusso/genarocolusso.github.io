@@ -12,6 +12,10 @@ app.directive('quiz', function(quizFactory) {
 				scope.quizOver = false;
 				scope.inProgress = true;
 				scope.bgimage = '';
+				scope.scoreanterior = localStorage.getItem("scoreanterior");
+				if(isNaN(scope.scoreanterior) )
+				    scope.scoreanterior = 0
+
 				scope.randomiza();
 				scope.getQuestion();
 				$('#titulozera').css("display", "none");
@@ -21,6 +25,7 @@ app.directive('quiz', function(quizFactory) {
 
 			scope.reset = function() {
 				scope.inProgress = false;
+				scope.scoreanterior = localStorage.setItem("scoreanterior", 	scope.score);
 				scope.score = 0;
 				$('#titulozera').css("display", "inherit");
 				$('.container').removeClass("finish");
@@ -230,7 +235,7 @@ app.factory('quizFactory', function() {
 			answer: 2
 		},
 		{
-			question: "Qual o nome da linha de ônibus que chega e que parte da UFSM mais lotado?",
+			question: "Qual o nome da linha de ônibus que chega e que parte da UFSM lotado?",
 			options: ["Bombeiros", "Encanadores", "Tambo", "Circular"],
 			answer: 0
 		},

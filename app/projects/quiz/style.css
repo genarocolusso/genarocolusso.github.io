@@ -16,7 +16,9 @@ body {
 			  animation: 2.5s animacores infinite;
 				overflow: hidden;
 }
-
+span.anteriorfez {
+    font-size: 14px !important;
+}
 .menino {
     background: url(homi.png);
     background-size: cover;
@@ -335,4 +337,7 @@ font-size: 130px;}
 		50%{
 		  background-color: #391A66;
 	}
+	100%{
+    background-color: #D92E6D;;
+  }
 }

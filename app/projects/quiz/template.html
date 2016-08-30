@@ -21,9 +21,11 @@
 	</div>
 
 	<div ng-show="quizOver">
-		<h2>O quiz acabou</h2>
+		<h2>O quiz acabou, você fez</h2>
 		<div id="score"  >
-		 <span>{{score*10}}</span> <br>Pontos!
+		 <span>{{score*10}}</span> <br>Pontos!<br><br>
+
+		 <span class="anteriorfez"> O jogador anterior fez <b> {{scoreanterior*10}} </b> </span>
 		</div>
 		<br>
 		<button ng-click="reset()" class="btnblack">Jogar Novamente</button>
