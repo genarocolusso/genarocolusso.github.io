@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync');
@@ -32,10 +31,10 @@ gulp.task('browserSync', function() {
 })
 
 gulp.task('sass',  function() {
-  // runSequence(
-  //   'minifycss',
-  //   'concatcss',
-  //   callback);
+ runSequence(
+     'minifycss',
+     'concatcss',
+  callback);
 })
 
 gulp.task('minifycss', function() {
