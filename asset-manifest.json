@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c3162188.chunk.css",
+    "main.js": "/static/js/main.789eac2a.chunk.js",
+    "main.js.map": "/static/js/main.789eac2a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d12d0e88.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d12d0e88.js.map",
+    "static/js/2.1d8bcb98.chunk.js": "/static/js/2.1d8bcb98.chunk.js",
+    "static/js/2.1d8bcb98.chunk.js.map": "/static/js/2.1d8bcb98.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.cb353b519c4ca6cb12dbabf3fb156d84.js": "/precache-manifest.cb353b519c4ca6cb12dbabf3fb156d84.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.c3162188.chunk.css.map": "/static/css/main.c3162188.chunk.css.map",
+    "static/js/2.1d8bcb98.chunk.js.LICENSE.txt": "/static/js/2.1d8bcb98.chunk.js.LICENSE.txt",
+    "static/media/aircnc.jpg": "/static/media/aircnc.4685dcc7.jpg",
+    "static/media/codepen.png": "/static/media/codepen.cbe24982.png",
+    "static/media/delivery.jpg": "/static/media/delivery.b494939a.jpg",
+    "static/media/findev.jpg": "/static/media/findev.5354cdd4.jpg",
+    "static/media/lolclient.jpg": "/static/media/lolclient.8dd42f7d.jpg",
+    "static/media/plus_vector.svg": "/static/media/plus_vector.37a2264c.svg",
+    "static/media/profilepicture.png": "/static/media/profilepicture.1188266c.png",
+    "static/media/travel.jpg": "/static/media/travel.61e30804.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d12d0e88.js",
+    "static/js/2.1d8bcb98.chunk.js",
+    "static/css/main.c3162188.chunk.css",
+    "static/js/main.789eac2a.chunk.js"
+  ]
+}
