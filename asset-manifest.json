@@ -1,30 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.53fb2b98.chunk.css",
-    "main.js": "/static/js/main.70a555c8.chunk.js",
-    "main.js.map": "/static/js/main.70a555c8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d12d0e88.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d12d0e88.js.map",
-    "static/js/2.a4647447.chunk.js": "/static/js/2.a4647447.chunk.js",
-    "static/js/2.a4647447.chunk.js.map": "/static/js/2.a4647447.chunk.js.map",
+    "main.css": "/static/css/main.204b9150.chunk.css",
+    "main.js": "/static/js/main.c2104ef4.chunk.js",
+    "main.js.map": "/static/js/main.c2104ef4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3c414106.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3c414106.js.map",
+    "static/js/2.558c18a2.chunk.js": "/static/js/2.558c18a2.chunk.js",
+    "static/js/2.558c18a2.chunk.js.map": "/static/js/2.558c18a2.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a738a65485209f571b32271c30ca0d0d.js": "/precache-manifest.a738a65485209f571b32271c30ca0d0d.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.53fb2b98.chunk.css.map": "/static/css/main.53fb2b98.chunk.css.map",
-    "static/js/2.a4647447.chunk.js.LICENSE.txt": "/static/js/2.a4647447.chunk.js.LICENSE.txt",
-    "static/media/aircnc.jpg": "/static/media/aircnc.4685dcc7.jpg",
-    "static/media/codepen.png": "/static/media/codepen.cbe24982.png",
-    "static/media/delivery.jpg": "/static/media/delivery.b494939a.jpg",
-    "static/media/findev.jpg": "/static/media/findev.5354cdd4.jpg",
-    "static/media/lolclient.jpg": "/static/media/lolclient.8dd42f7d.jpg",
-    "static/media/plus_vector.svg": "/static/media/plus_vector.37a2264c.svg",
-    "static/media/profilepicture.png": "/static/media/profilepicture.1188266c.png",
-    "static/media/travel.jpg": "/static/media/travel.61e30804.jpg"
+    "static/css/main.204b9150.chunk.css.map": "/static/css/main.204b9150.chunk.css.map",
+    "static/js/2.558c18a2.chunk.js.LICENSE.txt": "/static/js/2.558c18a2.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/avatar.96caa773.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d12d0e88.js",
-    "static/js/2.a4647447.chunk.js",
-    "static/css/main.53fb2b98.chunk.css",
-    "static/js/main.70a555c8.chunk.js"
+    "static/js/runtime-main.3c414106.js",
+    "static/js/2.558c18a2.chunk.js",
+    "static/css/main.204b9150.chunk.css",
+    "static/js/main.c2104ef4.chunk.js"
   ]
 }
